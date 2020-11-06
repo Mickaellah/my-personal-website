@@ -34043,7 +34043,7 @@ function PortfolioPage() {
     alt: "My team page"
   }))), /*#__PURE__*/_react.default.createElement("li", {
     className: "screenshot_list"
-  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Here is a movie search app, where we can search for movies. It is made by fetching data from API, build with React."), /*#__PURE__*/_react.default.createElement("img", {
+  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Here is a movie search app, where we can search for movies. It is made by fetching data from an API, build with React."), /*#__PURE__*/_react.default.createElement("img", {
     className: "screenshot",
     src: _ghibliMovies.default,
     alt: "Ghibli movies"
@@ -34053,7 +34053,35 @@ function PortfolioPage() {
     className: "screenshot screenshot__tea-time",
     src: _teaTimeTopic.default,
     alt: "Tea time topic"
-  })))))));
+  }))))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "link_to_website"
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "links"
+  }, "Links that bring to the actual websites."), /*#__PURE__*/_react.default.createElement("nav", {
+    className: "link_navigation"
+  }, /*#__PURE__*/_react.default.createElement("ul", {
+    className: "link_container"
+  }, /*#__PURE__*/_react.default.createElement("li", {
+    className: "link_list_item"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    activeClassName: "site_link",
+    href: "https://my-team-pages.netlify.app/"
+  }, "My team page")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "link_list_item"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    activeClassName: "site_link",
+    href: "https://input-component-app.netlify.app/"
+  }, "Input component")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "link_list_item"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    activeClassName: "site_link",
+    href: "https://studio-ghibly-movies.netlify.app/"
+  }, "Studio ghibly movies")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "link_list_item"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    activeClassName: "site_link",
+    href: "https://tea-time-topics.netlify.app/"
+  }, "Tea time topics")))))));
 }
 
 var _default = PortfolioPage;
@@ -34134,7 +34162,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58472" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50239" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

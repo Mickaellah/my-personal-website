@@ -39,7 +39,7 @@ function PortfolioPage() {
                         <li className="screenshot_list">
                             <div>
                                 <p>
-                                    Here is a movie search app, where we can search for movies. It is made by fetching data from API, build with React.
+                                    Here is a movie search app, where we can search for movies. It is made by fetching data from an API, build with React.
                                 </p>
                                 <img className="screenshot" src={GhibliMovie} alt="Ghibli movies" />
                             </div>
@@ -54,6 +54,25 @@ function PortfolioPage() {
                         </li>
                     </ul>
                 </nav>
+                <div className="link_to_website">
+                    <p className="links">Links that bring to the actual websites.</p>
+                    <nav className="link_navigation">
+                        <ul className="link_container">
+                            <li className='link_list_item'>
+                                <a activeClassName="site_link" href="https://my-team-pages.netlify.app/">My team page</a>
+                            </li>
+                            <li className='link_list_item'>
+                                <a activeClassName="site_link" href="https://input-component-app.netlify.app/">Input component</a>
+                            </li>
+                            <li className='link_list_item'>
+                                <a activeClassName="site_link" href="https://studio-ghibly-movies.netlify.app/">Studio ghibly movies</a>
+                            </li>
+                            <li className='link_list_item'>
+                                <a activeClassName="site_link" href="https://tea-time-topics.netlify.app/">Tea time topics</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </main>
         </>
     )
