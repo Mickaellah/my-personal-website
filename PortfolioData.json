@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1607068592685,
+        "title": "Country quiz",
+        "type": "react",
+        "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+        "code": "https://github.com/Mickaellah/country-quiz",
+        "app": "https://clopedia-country-quiz.netlify.app"
+    },
+    {
+        "id": 1607068603884,
+        "title": "Wind bnb",
+        "type": "react",
+        "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+        "code": "https://github.com/Mickaellah/airbnb-clone",
+        "app": "https://clopedia-wind-bnb.netlify.app/"
+    },
+    {
+        "id": 1607068615772,
+        "title": "Front end final",
+        "type": "html and sass",
+        "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+        "code": "https://github.com/Mickaellah/front-end-finals",
+        "app": "https://clopedia-frontend-finals.netlify.app/"
+    },
+    {
+        "id": 1607068628733,
+        "title": "Hit parade react",
+        "type": "react",
+        "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+        "code": "https://github.com/Mickaellah/hit-parade-react",
+        "app": "https://clopedia-hit-parade.netlify.app/"
+    },
+    {
+        "id": 1607688739172,
+        "title": "Birthday app",
+        "type": "vanilla javascript",
+        "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+        "code": "https://github.com/Mickaellah/birthday-app",
+        "app": "https://clopedia-bithday-app.netlify.app/"
+    },
+    {
+        "id": 1607068643042,
+        "title": "Movie start app",
+        "type": "react",
+        "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+        "code": "https://github.com/Mickaellah/wkp9_refactoring",
+        "app": "https://clopedia-movies-app.netlify.app/"
+    },
+    {
+        "id": 1607068680818,
+        "title": "Front end assessment",
+        "type": "html and sass",
+        "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+        "code": "https://github.com/Mickaellah/front-end-assessment",
+        "app": "https://clopedia-frontend-assessment.netlify.app/"
+    },
+    {
+        "id": 1607688716645,
+        "title": "React random quote generator",
+        "type": "react",
+        "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+        "code": "https://github.com/Mickaellah/react-random-quote-generator",
+        "app": "https://github.com/Mickaellah/react-random-quote-generator"
+    }
+]

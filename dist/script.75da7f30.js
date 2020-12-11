@@ -33937,7 +33937,7 @@ function NavBar() {
       marginInlineStart: '32px',
       textTransform: 'uppercase'
     }
-  }, "Portfolio")))));
+  }, "Projects")))));
 }
 
 var _default = NavBar;
@@ -33996,14 +33996,64 @@ function AboutPage() {
 
 var _default = AboutPage;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"img/ghibli-movies.png":[function(require,module,exports) {
-module.exports = "/ghibli-movies.bbf7a718.png";
-},{}],"img/input-components.png":[function(require,module,exports) {
-module.exports = "/input-components.45e60aa6.png";
-},{}],"img/my-team-page.png":[function(require,module,exports) {
-module.exports = "/my-team-page.14f8f4f3.png";
-},{}],"img/tea-time-topic.png":[function(require,module,exports) {
-module.exports = "/tea-time-topic.4d39ff3f.png";
+},{"react":"node_modules/react/index.js"}],"PortfolioData.json":[function(require,module,exports) {
+module.exports = [{
+  "id": 1607068592685,
+  "title": "Country quiz",
+  "type": "react",
+  "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+  "code": "https://github.com/Mickaellah/country-quiz",
+  "app": "https://clopedia-country-quiz.netlify.app"
+}, {
+  "id": 1607068603884,
+  "title": "Wind bnb",
+  "type": "react",
+  "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+  "code": "https://github.com/Mickaellah/airbnb-clone",
+  "app": "https://clopedia-wind-bnb.netlify.app/"
+}, {
+  "id": 1607068615772,
+  "title": "Front end final",
+  "type": "html and sass",
+  "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+  "code": "https://github.com/Mickaellah/front-end-finals",
+  "app": "https://clopedia-frontend-finals.netlify.app/"
+}, {
+  "id": 1607068628733,
+  "title": "Hit parade react",
+  "type": "react",
+  "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+  "code": "https://github.com/Mickaellah/hit-parade-react",
+  "app": "https://clopedia-hit-parade.netlify.app/"
+}, {
+  "id": 1607688739172,
+  "title": "Birthday app",
+  "type": "vanilla javascript",
+  "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+  "code": "https://github.com/Mickaellah/birthday-app",
+  "app": "https://clopedia-bithday-app.netlify.app/"
+}, {
+  "id": 1607068643042,
+  "title": "Movie start app",
+  "type": "react",
+  "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+  "code": "https://github.com/Mickaellah/wkp9_refactoring",
+  "app": "https://clopedia-movies-app.netlify.app/"
+}, {
+  "id": 1607068680818,
+  "title": "Front end assessment",
+  "type": "html and sass",
+  "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+  "code": "https://github.com/Mickaellah/front-end-assessment",
+  "app": "https://clopedia-frontend-assessment.netlify.app/"
+}, {
+  "id": 1607688716645,
+  "title": "React random quote generator",
+  "type": "react",
+  "description": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+  "code": "https://github.com/Mickaellah/react-random-quote-generator",
+  "app": "https://github.com/Mickaellah/react-random-quote-generator"
+}];
 },{}],"components/PortfolioPage.js":[function(require,module,exports) {
 "use strict";
 
@@ -34012,81 +34062,77 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
-var _ghibliMovies = _interopRequireDefault(require("../img/ghibli-movies.png"));
-
-var _inputComponents = _interopRequireDefault(require("../img/input-components.png"));
-
-var _myTeamPage = _interopRequireDefault(require("../img/my-team-page.png"));
-
-var _teaTimeTopic = _interopRequireDefault(require("../img/tea-time-topic.png"));
+var _PortfolioData = _interopRequireDefault(require("../PortfolioData.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 function PortfolioPage() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h1", null, "My portfolio")), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h3", null, "Here are some projects that we have done at school. They are made by using HTM, CSS and with React Javascript.")), /*#__PURE__*/_react.default.createElement("nav", {
-    className: "project_screenshot"
-  }, /*#__PURE__*/_react.default.createElement("ul", {
-    className: "screenshot_naviation"
-  }, /*#__PURE__*/_react.default.createElement("li", {
-    className: "screenshot_list"
-  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "This is an input components where you can find multiple inputs."), /*#__PURE__*/_react.default.createElement("img", {
-    className: "screenshot",
-    src: _inputComponents.default,
-    alt: "An input component"
-  }))), /*#__PURE__*/_react.default.createElement("li", {
-    className: "screenshot_list"
-  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "This is a page that we are asked to build by using HTML and CSS positioning."), /*#__PURE__*/_react.default.createElement("img", {
-    className: "screenshot",
-    src: _myTeamPage.default,
-    alt: "My team page"
-  }))), /*#__PURE__*/_react.default.createElement("li", {
-    className: "screenshot_list"
-  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Here is a movie search app, where we can search for movies. It is made by fetching data from an API, build with React."), /*#__PURE__*/_react.default.createElement("img", {
-    className: "screenshot",
-    src: _ghibliMovies.default,
-    alt: "Ghibli movies"
-  }))), /*#__PURE__*/_react.default.createElement("li", {
-    className: "screenshot_list"
-  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "This is a tea time topic app, it is from an API and we asked to fetch the data by using React."), /*#__PURE__*/_react.default.createElement("img", {
-    className: "screenshot screenshot__tea-time",
-    src: _teaTimeTopic.default,
-    alt: "Tea time topic"
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "link_to_website"
-  }, /*#__PURE__*/_react.default.createElement("p", {
-    className: "links"
-  }, "Links that bring to the actual websites."), /*#__PURE__*/_react.default.createElement("nav", {
-    className: "link_navigation"
-  }, /*#__PURE__*/_react.default.createElement("ul", {
-    className: "link_container"
-  }, /*#__PURE__*/_react.default.createElement("li", {
-    className: "link_list_item"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    activeClassName: "site_link",
-    href: "https://my-team-pages.netlify.app/"
-  }, "My team page")), /*#__PURE__*/_react.default.createElement("li", {
-    className: "link_list_item"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    activeClassName: "site_link",
-    href: "https://input-component-app.netlify.app/"
-  }, "Input component")), /*#__PURE__*/_react.default.createElement("li", {
-    className: "link_list_item"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    activeClassName: "site_link",
-    href: "https://studio-ghibly-movies.netlify.app/"
-  }, "Studio ghibly movies")), /*#__PURE__*/_react.default.createElement("li", {
-    className: "link_list_item"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    activeClassName: "site_link",
-    href: "https://tea-time-topics.netlify.app/"
-  }, "Tea time topics")))))));
+  var _useState = (0, _react.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      projects = _useState2[0],
+      setProjetcs = _useState2[1];
+
+  (0, _react.useEffect)(function () {
+    setProjetcs(_PortfolioData.default);
+  }, []);
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "filter_projects"
+  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Filter projects which built with React"), /*#__PURE__*/_react.default.createElement("button", {
+    className: "buttons",
+    type: "submit"
+  }, "React")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Filter projects which built with Javascript"), /*#__PURE__*/_react.default.createElement("button", {
+    className: "buttons",
+    type: "submit"
+  }, "Javascript")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Filter projects which built with HTML and CSS"), /*#__PURE__*/_react.default.createElement("button", {
+    className: "buttons",
+    type: "submit"
+  }, "Html"))), /*#__PURE__*/_react.default.createElement("section", {
+    className: "project"
+  }, projects.map(function (project) {
+    return /*#__PURE__*/_react.default.createElement("article", {
+      key: project.id,
+      className: "project_container"
+    }, /*#__PURE__*/_react.default.createElement("header", {
+      className: "project_heading"
+    }, /*#__PURE__*/_react.default.createElement("h3", {
+      className: "project_header"
+    }, project.title)), /*#__PURE__*/_react.default.createElement("div", {
+      className: "project_content"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "project_description"
+    }, /*#__PURE__*/_react.default.createElement("span", null, "# ", project.type), /*#__PURE__*/_react.default.createElement("p", null, project.description)), /*#__PURE__*/_react.default.createElement("div", {
+      className: "project_codes"
+    }, /*#__PURE__*/_react.default.createElement("a", {
+      className: "project_code",
+      href: "".concat(project.code)
+    }, "Code"), /*#__PURE__*/_react.default.createElement("a", {
+      className: "project_app",
+      href: "".concat(project.app)
+    }, "App"))));
+  })));
 }
 
 var _default = PortfolioPage;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../img/ghibli-movies.png":"img/ghibli-movies.png","../img/input-components.png":"img/input-components.png","../img/my-team-page.png":"img/my-team-page.png","../img/tea-time-topic.png":"img/tea-time-topic.png"}],"pages/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../PortfolioData.json":"PortfolioData.json"}],"pages/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34162,7 +34208,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50239" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61552" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

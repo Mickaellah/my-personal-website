@@ -49,7 +49,7 @@ function NavBar() {
                         to="/portfolio"
                         style={{ marginInlineStart: '32px', textTransform: 'uppercase' }}
                         >
-                            Portfolio
+                            Projects
                         </NavLink>
                     </div>
                 </div>
