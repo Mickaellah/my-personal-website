@@ -34093,18 +34093,58 @@ function PortfolioPage() {
   (0, _react.useEffect)(function () {
     setProjetcs(_PortfolioData.default);
   }, []);
+
+  function filterReactProjects(e) {
+    e.preventDefault();
+    var filteredArr = projects.filter(function (item) {
+      return item.type === "react";
+    });
+    console.log(filteredArr);
+    setProjetcs(filteredArr);
+  }
+
+  function filterJavascriptProjects(e) {
+    e.preventDefault();
+    var filteredArr = projects.filter(function (item) {
+      return item.type === "vanilla javascript";
+    });
+    console.log(filteredArr);
+    setProjetcs(filteredArr);
+  }
+
+  function filterHtmlProjects(e) {
+    e.preventDefault();
+    var filteredArr = projects.filter(function (item) {
+      return item.type === "html and sass";
+    });
+    console.log(filteredArr);
+    setProjetcs(filteredArr);
+  }
+
+  function resetPage(e) {
+    e.preventDefault();
+    setProjetcs(_PortfolioData.default);
+  }
+
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "filter_projects"
   }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Filter projects which built with React"), /*#__PURE__*/_react.default.createElement("button", {
     className: "buttons",
+    onClick: filterReactProjects,
     type: "submit"
   }, "React")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Filter projects which built with Javascript"), /*#__PURE__*/_react.default.createElement("button", {
     className: "buttons",
+    onClick: filterJavascriptProjects,
     type: "submit"
   }, "Javascript")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Filter projects which built with HTML and CSS"), /*#__PURE__*/_react.default.createElement("button", {
     className: "buttons",
+    onClick: filterHtmlProjects,
     type: "submit"
-  }, "Html"))), /*#__PURE__*/_react.default.createElement("section", {
+  }, "Html")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Reset the page by clicking this button"), /*#__PURE__*/_react.default.createElement("button", {
+    className: "buttons",
+    onClick: resetPage,
+    type: "submit"
+  }, "Reset"))), /*#__PURE__*/_react.default.createElement("section", {
     className: "project"
   }, projects.map(function (project) {
     return /*#__PURE__*/_react.default.createElement("article", {

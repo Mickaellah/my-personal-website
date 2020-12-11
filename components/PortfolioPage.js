@@ -9,20 +9,54 @@ function PortfolioPage() {
     useEffect(() => {
         setProjetcs(PortfolioData);
     }, [])
+
+    function filterReactProjects(e) {
+        e.preventDefault();
+        const filteredArr = projects.filter(item => item.type === "react");
+        console.log(filteredArr);
+
+        setProjetcs(filteredArr);
+    }
+
+    function filterJavascriptProjects(e) {
+        e.preventDefault();
+        const filteredArr = projects.filter(item => item.type === "vanilla javascript");
+        console.log(filteredArr);
+
+        setProjetcs(filteredArr);
+    }
+
+    function filterHtmlProjects(e) {
+        e.preventDefault();
+        const filteredArr = projects.filter(item => item.type === "html and sass");
+        console.log(filteredArr);
+
+        setProjetcs(filteredArr);
+    }
+
+    function resetPage(e) {
+        e.preventDefault();
+        setProjetcs(PortfolioData);
+    }
+
     return (
         <>
             <div className="filter_projects">
                 <div>
                     <p>Filter projects which built with React</p>
-                    <button className="buttons" type="submit">React</button>
+                    <button className="buttons" onClick={filterReactProjects} type="submit">React</button>
                 </div>
                 <div>
                     <p>Filter projects which built with Javascript</p>
-                    <button className="buttons" type="submit">Javascript</button>
+                    <button className="buttons" onClick={filterJavascriptProjects} type="submit">Javascript</button>
                 </div>
                 <div>
                     <p>Filter projects which built with HTML and CSS</p>
-                    <button className="buttons" type="submit">Html</button>
+                    <button className="buttons" onClick={filterHtmlProjects} type="submit">Html</button>
+                </div>
+                <div>
+                    <p>Reset the page by clicking this button</p>
+                    <button className="buttons" onClick={resetPage} type="submit">Reset</button>
                 </div>
             </div>
             <section  className="project">
