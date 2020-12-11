@@ -13,7 +13,6 @@ function PortfolioPage() {
     function filterReactProjects(e) {
         e.preventDefault();
         const filteredArr = projects.filter(item => item.type === "react");
-        console.log(filteredArr);
 
         setProjetcs(filteredArr);
     }
@@ -21,7 +20,6 @@ function PortfolioPage() {
     function filterJavascriptProjects(e) {
         e.preventDefault();
         const filteredArr = projects.filter(item => item.type === "vanilla javascript");
-        console.log(filteredArr);
 
         setProjetcs(filteredArr);
     }
@@ -29,7 +27,6 @@ function PortfolioPage() {
     function filterHtmlProjects(e) {
         e.preventDefault();
         const filteredArr = projects.filter(item => item.type === "html and sass");
-        console.log(filteredArr);
 
         setProjetcs(filteredArr);
     }

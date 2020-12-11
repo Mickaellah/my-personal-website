@@ -34099,7 +34099,6 @@ function PortfolioPage() {
     var filteredArr = projects.filter(function (item) {
       return item.type === "react";
     });
-    console.log(filteredArr);
     setProjetcs(filteredArr);
   }
 
@@ -34108,7 +34107,6 @@ function PortfolioPage() {
     var filteredArr = projects.filter(function (item) {
       return item.type === "vanilla javascript";
     });
-    console.log(filteredArr);
     setProjetcs(filteredArr);
   }
 
@@ -34117,7 +34115,6 @@ function PortfolioPage() {
     var filteredArr = projects.filter(function (item) {
       return item.type === "html and sass";
     });
-    console.log(filteredArr);
     setProjetcs(filteredArr);
   }
 
