@@ -33964,11 +33964,47 @@ function HomePage() {
   }, "Frontend developer learner."))), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "About")), /*#__PURE__*/_react.default.createElement("div", {
     className: "content"
   }, /*#__PURE__*/_react.default.createElement("p", null, "My name is Clopedia, I started to learn how to code for a year. Before, I didn't have any idea about code, I used a piece of software without understanding the functionality and the component that used to build it."), /*#__PURE__*/_react.default.createElement("img", {
+    className: "my_image",
     src: _clopedia.default,
     alt: "My image"
   }))));
 }
-},{"react":"node_modules/react/index.js","../img/clopedia.JPG":"img/clopedia.JPG"}],"components/AboutPage.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../img/clopedia.JPG":"img/clopedia.JPG"}],"img/hary.jpg":[function(require,module,exports) {
+module.exports = "/hary.59a3fc19.jpg";
+},{}],"img/class.jpg":[function(require,module,exports) {
+module.exports = "/class.e4d92330.jpg";
+},{}],"img/image.JPG":[function(require,module,exports) {
+module.exports = "/image.5632878c.JPG";
+},{}],"AboutData.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var about = [{
+  id: 1607753435768,
+  title: "Name and country",
+  content: "My name is Clopedia Nomenjanahary, I am 18 years old. I am from Madagascar which is a coutry that can be seen in Africa. I am studying at Onja which is an organisation that empowers young people who cannot afford their study to a higher education like university to become a frontend developer.",
+  image: require("./img/hary.jpg")
+}, {
+  id: 1607753447631,
+  title: "Current position",
+  content: "Before, I hardly know how to speak and understand English. I started to learn English language, time is limited because there are lots of things that we have to do. I had a year to learn English, and that is the first year of our study at Onja on 2019. This year we started to learn how to code, which is a very great challenge. During my lifetime, I just use a piece of software without understanding the functionality and the components that are used to build it, but now I try to imagine the line of code to build a piece of component.",
+  image: require("./img/class.jpg")
+}, {
+  id: 1607753457792,
+  title: "Values",
+  content: "Opening doors for others is a very important thing to do, and that is what we are doing now. We are not only work to earn money for our own family, but we are opening doors for other young people like us to reveal to the world who they are and what their talents are.",
+  image: require("./img/image.JPG")
+}, {
+  id: 1607753470395,
+  title: "Outside of work",
+  content: "I lived in a small village called Andromba which is in the Ambatondrazaka region. When Onja hasn't selected me to be one of their students, I lived with my parents who are both farmers and helping them taking care of the field and some livestokes. I have two brothers and a little sister, and they are living with our parents."
+}];
+var _default = about;
+exports.default = _default;
+},{"./img/hary.jpg":"img/hary.jpg","./img/class.jpg":"img/class.jpg","./img/image.JPG":"img/image.JPG"}],"components/AboutPage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33976,27 +34012,59 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
+
+var _AboutData = _interopRequireDefault(require("../AboutData"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 function AboutPage() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h1", null, "About me")), /*#__PURE__*/_react.default.createElement("main", {
-    className: "about_page"
-  }, /*#__PURE__*/_react.default.createElement("section", {
+  var _useState = (0, _react.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      data = _useState2[0],
+      setData = _useState2[1];
+
+  (0, _react.useEffect)(function () {
+    setData(_AboutData.default);
+  }, []);
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h1", null, "About me")), /*#__PURE__*/_react.default.createElement("section", {
     className: "information"
-  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Name and country")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Clopedia Nomenjanahary is astudent at ONG Onja. I am from Madagascar which can be seen in Africa. I am studying at Onja which is an organisation that empowers young people who cannot afford their study to a higher education like university. I am 18 years old."))), /*#__PURE__*/_react.default.createElement("section", {
-    className: "information"
-  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Current position")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Before, I hardly know how to speak and understand English. I started to learn English language, time is limited because there are lots of things that I have to do. I have a year to learn English and I could talk to native English speakers while they could understand me. This year we started to learn how to code, which is a very great challenge. During my lifetime, I just use a piece of software without understanding the functionality and the components that are used to make it, but now I try to imagine the line of code to make a piece of component."))), /*#__PURE__*/_react.default.createElement("section", {
-    className: "information"
-  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Values")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Opening doors for others is a very important thing to do, and that is what we are trying to do. We are not only work to earn money for our own family, but we are opening doors for other young people like us to reveal to the world who they are."))), /*#__PURE__*/_react.default.createElement("section", {
-    className: "information"
-  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Outside of work")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "I lived in a small village called Andromba which is in Ambatondrazaka region. Before Onja has selected me to be one of their students, I lived with my parents who are both farmers and helping them taking care of the field and some livestokes. I have two brothers and a little sister, and they are living with our parents.")))));
+  }, data.map(function (item) {
+    return /*#__PURE__*/_react.default.createElement("article", {
+      key: item.id,
+      className: "about_me"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "about-detail"
+    }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h3", {
+      className: "about_headers"
+    }, item.title)), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, item.content))), /*#__PURE__*/_react.default.createElement("div", {
+      className: "about_image"
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: item.image,
+      alt: "Image"
+    })));
+  })));
 }
 
 var _default = AboutPage;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"PortfolioData.json":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../AboutData":"AboutData.js"}],"PortfolioData.json":[function(require,module,exports) {
 module.exports = [{
   "id": 1607068592685,
   "title": "Country quiz",
@@ -34245,7 +34313,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61552" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52943" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -16,9 +16,9 @@ body {
     font-family: 'Poppins';
     position: relative;
     padding: 16px;
-    background-color: #faeee7;
+    background-color: #fef6e4;
     margin: 0;
-    color: #594a4e;
+    color: #172c66;
 
 }
 
@@ -34,7 +34,7 @@ h1,
 h2 {
     text-transform: uppercase;
     margin: 0;
-    color: #33272a;
+    color: #001858;
 }
 
 
@@ -48,14 +48,15 @@ h2 {
     font-size: 40px;
 }
 
-.mission {
-    color: #ff8ba7;
-    text-align: center;
-    font-weight: 700;
+.about_headers {
+    font-size: 24px;
+    color: #001858;
 }
 
 button {
     cursor: pointer;
+    background-color: #f582ae;
+    color: #001858;
 }
 
 img {
@@ -89,10 +90,6 @@ a {
     color: blue;
     font-size: 12px;
     font-weight: 700;
-}
-
-.home_page {
-    color: black;
 }
 
 .filter_projects {
@@ -132,19 +129,8 @@ a {
     padding-block: 12px;
     padding-inline: 16px;
     border-radius: 8px;
-    background-color: blue;
-    color: white;
-}
-
-.information {
-    margin: 16px;
-    padding: 16px;
-    background-color: aliceblue;
-    border-radius: 5px;
-}
-
-img {
-    border-radius: 10px;
+    background-color: #f582ae;
+    color: #001858;
 }
 
 
@@ -160,6 +146,17 @@ img {
 .link_list_item {
     margin: 0;
     margin-block-start: 16px;
+}
+
+@media (max-width: 600px) {
+    .about_me {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-block-start: 48px;
+    }
+    .about_image > img {
+        width: 70%;
+    }
 }
 
 @media (min-width: 600px) {
@@ -198,7 +195,7 @@ img {
         margin-inline-start: 55vw;
     }
 
-    img {
+    .my_image {
         margin-block-start: -44px;
     }
 
@@ -210,10 +207,7 @@ img {
     }
 
     .information {
-        margin: 16px;
-        padding: 16px;
-        background-color: aliceblue;
-        border-radius: 5px;
+        margin-block-start: 48px;
     }
 
     .link_to_website {
@@ -224,5 +218,54 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .about_me {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        grid-column-gap: 24px;
+        column-gap: 24px;
+    }
+
+    .about_me:nth-child(1),
+    .about_me:nth-child(3) {
+        margin-block-end: -132px;
+    }
+
+    .about_me:nth-child(1) > .about-detail {
+        grid-column: 2 / 4;
+    }
+
+    .about_me:nth-child(1) > .about_image {
+        grid-column: 1 / 2;
+        transform: translateY(-80%);
+    }
+
+    .about_me:nth-child(2) > .about-detail {
+        grid-column: 1 / 3;
+    }
+
+    .about_me:nth-child(2) > .about_image {
+        grid-column: 3 / 4;
+        transform: translateY(20%);
+    }
+
+    .about_me:nth-child(3) > .about-detail {
+        grid-column: 2 / 4;
+    }
+
+    .about_me:nth-child(3) > .about_image {
+        grid-column: 1 / 2;
+        transform: translateY(-80%);
+    }
+
+    .about_me:last-child > .about-detail {
+        grid-column: 1 / 3;
+    }
+
+    .about_me:last-child > .about_image {
+        grid-column: 3 / 4;
+        transform: translateY(20%);
+    }
+
 
 }
