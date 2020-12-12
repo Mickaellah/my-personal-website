@@ -73,6 +73,10 @@ img:hover {
     margin-inline-start: 25vw;
 }
 
+.navbar-item {
+    font-size: 18px;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -92,24 +96,12 @@ a {
     font-weight: 700;
 }
 
-.filter_projects {
-    display: flex;
-    margin-block-end: 32px;
-}
-
 .buttons {
     padding-inline: 16px;
     padding-block: 12px;
     border: none;
     border-radius: 8px;
     box-shadow: 2px 2px 2px gray;
-}
-
-.project {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 12px;
-    column-gap: 12px;
 }
 
 .project_container {
@@ -132,7 +124,6 @@ a {
     background-color: #f582ae;
     color: #001858;
 }
-
 
 .is-active {
     color: darkblue;
@@ -159,7 +150,16 @@ a {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
+    .project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 12px;
+        column-gap: 12px;
+    }
+}
+
+@media (min-width: 700px) {
     body {
         max-width: 1000px;
         margin-inline-start: auto;
@@ -168,7 +168,7 @@ a {
     }
 
     h1 {
-        font-size: 64px;
+        font-size: 48px;
         margin-block-start: 48px;
     }
 
@@ -202,22 +202,14 @@ a {
     .about_page {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20px;
-        column-gap: 20px;
+        grid-column-gap: 32px;
+        column-gap: 32px;
     }
 
     .information {
         margin-block-start: 48px;
     }
 
-    .link_to_website {
-        text-align: center;
-    }
-
-    .link_container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .about_me {
         display: grid;
@@ -228,7 +220,11 @@ a {
 
     .about_me:nth-child(1),
     .about_me:nth-child(3) {
-        margin-block-end: -132px;
+        margin-block-end: -20%;
+    }
+
+    .about_me:last-child {
+        margin-block-start: 48px;
     }
 
     .about_me:nth-child(1) > .about-detail {
@@ -265,6 +261,18 @@ a {
     .about_me:last-child > .about_image {
         grid-column: 3 / 4;
         transform: translateY(20%);
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 12px;
+        column-gap: 12px;
+    }
+
+    .filter_projects {
+        display: flex;
+        margin-block-end: 32px;
     }
 
 
