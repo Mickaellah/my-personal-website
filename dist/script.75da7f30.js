@@ -34191,7 +34191,9 @@ function PortfolioPage() {
     setProjetcs(_PortfolioData.default);
   }
 
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "projects_heading"
+  }, "These are some of projects that we built during the time that we were learning.")), /*#__PURE__*/_react.default.createElement("div", {
     className: "filter_projects"
   }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Filter projects which built with React"), /*#__PURE__*/_react.default.createElement("button", {
     className: "buttons",

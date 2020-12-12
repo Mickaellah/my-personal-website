@@ -38,6 +38,11 @@ function PortfolioPage() {
 
     return (
         <>
+            <header>
+                <h1 className="projects_heading">
+                    These are some of projects that we built during the time that we were learning. 
+                </h1>
+            </header>
             <div className="filter_projects">
                 <div>
                     <p>Filter projects which built with React</p>

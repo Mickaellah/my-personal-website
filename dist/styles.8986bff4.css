@@ -77,6 +77,12 @@ img:hover {
     font-size: 18px;
 }
 
+.projects_heading {
+    text-transform: none;
+    font-size: 32px;
+    margin-block-end: 48px;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -139,7 +145,7 @@ a {
     margin-block-start: 16px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .about_me {
         display: flex;
         flex-direction: column-reverse;
@@ -159,7 +165,7 @@ a {
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 750px) {
     body {
         max-width: 1000px;
         margin-inline-start: auto;
