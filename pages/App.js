@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import Home from '../Components/HomePage';
 import About from '../components/AboutPage';
 import Portfolio from '../components/PortfolioPage';
+import Contact from '../components/Contact';
 
 import {
 	BrowserRouter as Router,
@@ -24,6 +25,10 @@ export default function App() {
 
                     <Route path="/portfolio">
                         <Portfolio />
+                    </Route>
+
+                    <Route path="/contact">
+                        <Contact />
                     </Route>
 
                     <Route path="/">

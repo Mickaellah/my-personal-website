@@ -33937,7 +33937,15 @@ function NavBar() {
       marginInlineStart: '32px',
       textTransform: 'uppercase'
     }
-  }, "Projects")))));
+  }, "Projects"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.NavLink, {
+    className: "navbar-item",
+    activeClassName: "is-active",
+    to: "/contact",
+    style: {
+      marginInlineStart: '32px',
+      textTransform: 'uppercase'
+    }
+  }, "Contact")))));
 }
 
 var _default = NavBar;
@@ -34239,7 +34247,22 @@ function PortfolioPage() {
 
 var _default = PortfolioPage;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../PortfolioData.json":"PortfolioData.json"}],"pages/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../PortfolioData.json":"PortfolioData.json"}],"components/Contact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Contact;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Contact() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, "Contact"));
+}
+},{"react":"node_modules/react/index.js"}],"pages/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34257,6 +34280,8 @@ var _AboutPage = _interopRequireDefault(require("../components/AboutPage"));
 
 var _PortfolioPage = _interopRequireDefault(require("../components/PortfolioPage"));
 
+var _Contact = _interopRequireDefault(require("../components/Contact"));
+
 var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -34272,10 +34297,12 @@ function App() {
   }, /*#__PURE__*/_react.default.createElement(_AboutPage.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/portfolio"
   }, /*#__PURE__*/_react.default.createElement(_PortfolioPage.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/contact"
+  }, /*#__PURE__*/_react.default.createElement(_Contact.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/"
   }, /*#__PURE__*/_react.default.createElement(_HomePage.default, null))))));
 }
-},{"react":"node_modules/react/index.js","../components/NavBar":"components/NavBar.js","../Components/HomePage":"Components/HomePage.js","../components/AboutPage":"components/AboutPage.js","../components/PortfolioPage":"components/PortfolioPage.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"script.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../components/NavBar":"components/NavBar.js","../Components/HomePage":"Components/HomePage.js","../components/AboutPage":"components/AboutPage.js","../components/PortfolioPage":"components/PortfolioPage.js","../components/Contact":"components/Contact.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));

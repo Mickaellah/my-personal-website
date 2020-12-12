@@ -51,6 +51,15 @@ function NavBar() {
                         >
                             Projects
                         </NavLink>
+
+                        <NavLink
+                        className="navbar-item"
+                        activeClassName="is-active"
+                        to="/contact"
+                        style={{ marginInlineStart: '32px', textTransform: 'uppercase' }}
+                        >
+                            Contact
+                        </NavLink>
                     </div>
                 </div>
             </div>
