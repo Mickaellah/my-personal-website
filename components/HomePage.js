@@ -7,7 +7,7 @@ export default function HomePage() {
             <header>
                 <div>
                     <h1>Clopedia Nomenjanahary</h1>
-                    <p className="mission">Frontend developer learner.</p>
+                    <p className="mission">Frontend developer.</p>
                 </div>
 
             </header>

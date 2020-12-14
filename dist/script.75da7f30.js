@@ -33969,7 +33969,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function HomePage() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Clopedia Nomenjanahary"), /*#__PURE__*/_react.default.createElement("p", {
     className: "mission"
-  }, "Frontend developer learner."))), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "About")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "Frontend developer."))), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "About")), /*#__PURE__*/_react.default.createElement("div", {
     className: "content"
   }, /*#__PURE__*/_react.default.createElement("p", null, "My name is Clopedia, I started to learn how to code for a year. Before, I didn't have any idea about code, I used a piece of software without understanding the functionality and the component that used to build it."), /*#__PURE__*/_react.default.createElement("img", {
     className: "my_image",
@@ -34081,13 +34081,6 @@ module.exports = [{
   "code": "https://github.com/Mickaellah/country-quiz",
   "app": "https://clopedia-country-quiz.netlify.app"
 }, {
-  "id": 1607068603884,
-  "title": "Wind bnb",
-  "type": "react",
-  "description": "This project is a project for stays somewhere in Helsinki, Turky, Vaasa and Oulu. You can select how many rooms you want and for how many people will be there. It is a cool project and worth trying.",
-  "code": "https://github.com/Mickaellah/airbnb-clone",
-  "app": "https://clopedia-wind-bnb.netlify.app/"
-}, {
   "id": 1607068615772,
   "title": "Front end final",
   "type": "html and sass",
@@ -34108,13 +34101,6 @@ module.exports = [{
   "description": "In this project, I work with vanilla javascript to creact a birthday app. The data for this app is from an API which means I fetch an API to get the data. You can add, edit, filter and remove the list.",
   "code": "https://github.com/Mickaellah/birthday-app",
   "app": "https://clopedia-bithday-app.netlify.app/"
-}, {
-  "id": 1607068643042,
-  "title": "Movie start app",
-  "type": "react",
-  "description": "In this project, I work with react to create a website for movies. There are a few movies in the list and they are sorted by their rated score. There is a simple loading state while we are waiting for the data to load.",
-  "code": "https://github.com/Mickaellah/wkp9_refactoring",
-  "app": "https://clopedia-movies-app.netlify.app/"
 }, {
   "id": 1607068680818,
   "title": "Front end assessment",
@@ -34342,7 +34328,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52943" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51907" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
