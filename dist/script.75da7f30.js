@@ -34108,13 +34108,6 @@ module.exports = [{
   "description": "In this project, I work with html and sass to create this page. It is responsive and there is an image which you can see in the desktop view and cannot be seen in mobile view.",
   "code": "https://github.com/Mickaellah/front-end-assessment",
   "app": "https://clopedia-frontend-assessment.netlify.app/"
-}, {
-  "id": 1607688716645,
-  "title": "React random quote generator",
-  "type": "react",
-  "description": "In this project, I work with react to create a small page for randome quotes. You can only get a quote at a time, when you click on the down part of the page, it will bring you into anothe page for the quote details.",
-  "code": "https://github.com/Mickaellah/react-random-quote-generator",
-  "app": "https://github.com/Mickaellah/react-random-quote-generator"
 }];
 },{}],"components/PortfolioPage.js":[function(require,module,exports) {
 "use strict";
@@ -34328,7 +34321,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51907" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56882" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
