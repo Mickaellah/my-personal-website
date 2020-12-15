@@ -33983,6 +33983,8 @@ module.exports = "/hary.59a3fc19.jpg";
 module.exports = "/class.e4d92330.jpg";
 },{}],"img/image.JPG":[function(require,module,exports) {
 module.exports = "/image.5632878c.JPG";
+},{}],"img/my-village.jpg":[function(require,module,exports) {
+module.exports = "/my-village.9dae331d.jpg";
 },{}],"AboutData.js":[function(require,module,exports) {
 "use strict";
 
@@ -34008,11 +34010,12 @@ var about = [{
 }, {
   id: 1607753470395,
   title: "Outside of work",
-  content: "I lived in a small village called Andromba which is in the Ambatondrazaka region. I lived with my parents who are both farmers, and helping them taking care of the field and some livestokes before I started to study at Onja. I have two brothers and a little sister, and they are living with our parents."
+  content: "I lived in a small village called Andromba which is in the Ambatondrazaka region. I lived with my parents who are both farmers, and helping them taking care of the field and some livestokes before I started to study at Onja. I have two brothers and a little sister, and they are living with our parents.",
+  image: require("./img/my-village.jpg")
 }];
 var _default = about;
 exports.default = _default;
-},{"./img/hary.jpg":"img/hary.jpg","./img/class.jpg":"img/class.jpg","./img/image.JPG":"img/image.JPG"}],"components/AboutPage.js":[function(require,module,exports) {
+},{"./img/hary.jpg":"img/hary.jpg","./img/class.jpg":"img/class.jpg","./img/image.JPG":"img/image.JPG","./img/my-village.jpg":"img/my-village.jpg"}],"components/AboutPage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34321,7 +34324,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63764" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51933" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
