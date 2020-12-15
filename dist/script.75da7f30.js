@@ -33971,7 +33971,7 @@ function HomePage() {
     className: "mission"
   }, "Frontend developer."))), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "About")), /*#__PURE__*/_react.default.createElement("div", {
     className: "content"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "My name is Clopedia, I started to learn how to code for a year. Before, I didn't have any idea about code, I used a piece of software without understanding the functionality and the component that used to build it."), /*#__PURE__*/_react.default.createElement("img", {
+  }, /*#__PURE__*/_react.default.createElement("p", null, "My name is Clopedia, I started to learn how to code for a year. Before, I didn't have any idea about coding, I used a piece of software without understanding the functionality and the component that used to build it."), /*#__PURE__*/_react.default.createElement("img", {
     className: "my_image",
     src: _clopedia.default,
     alt: "My image"
@@ -34180,7 +34180,7 @@ function PortfolioPage() {
 
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h1", {
     className: "projects_heading"
-  }, "These are some of projects that we built during the time that we were learning.")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "These are some of the projects that we built during the time that we were learning.")), /*#__PURE__*/_react.default.createElement("div", {
     className: "filter_projects"
   }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Filter projects which built with React"), /*#__PURE__*/_react.default.createElement("button", {
     className: "buttons",
@@ -34321,7 +34321,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56882" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63764" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

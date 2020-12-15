@@ -40,7 +40,7 @@ function PortfolioPage() {
         <>
             <header>
                 <h1 className="projects_heading">
-                    These are some of projects that we built during the time that we were learning. 
+                    These are some of the projects that we built during the time that we were learning. 
                 </h1>
             </header>
             <div className="filter_projects">

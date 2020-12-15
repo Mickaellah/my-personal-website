@@ -65,10 +65,6 @@ img {
     box-shadow: 2px 2px 10px gray;
 }
 
-img:hover {
-    transform: scale(0.97);
-}
-
 .navbar-start {
     margin-inline-start: 25vw;
 }

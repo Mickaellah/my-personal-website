@@ -20,7 +20,7 @@ export default function HomePage() {
                 </header>
                 <div className="content">
                     <p>
-                        My name is Clopedia, I started to learn how to code for a year. Before, I didn't have any idea about code, I used a piece of software without understanding the functionality and the component that used to build it.
+                        My name is Clopedia, I started to learn how to code for a year. Before, I didn't have any idea about coding, I used a piece of software without understanding the functionality and the component that used to build it.
                     </p>
                     <img className="my_image" src={Clopedia} alt="My image" />
                 </div>
