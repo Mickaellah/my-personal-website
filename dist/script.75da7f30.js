@@ -33969,7 +33969,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function HomePage() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Clopedia Nomenjanahary"), /*#__PURE__*/_react.default.createElement("p", {
     className: "mission"
-  }, "Frontend developer."))), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "About")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "Front End Developer."))), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "About")), /*#__PURE__*/_react.default.createElement("div", {
     className: "content"
   }, /*#__PURE__*/_react.default.createElement("p", null, "My name is Clopedia, I started to learn how to code for a year. Before, I didn't have any idea about coding, I used a piece of software without understanding the functionality and the component that used to build it."), /*#__PURE__*/_react.default.createElement("img", {
     className: "my_image",
