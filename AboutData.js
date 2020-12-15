@@ -20,7 +20,7 @@ const about = [
     {
         id: 1607753470395,
         title: "Outside of work",
-        content: "I lived in a small village called Andromba which is in the Ambatondrazaka region. When Onja hasn't selected me to be one of their students, I lived with my parents who are both farmers and helping them taking care of the field and some livestokes. I have two brothers and a little sister, and they are living with our parents."
+        content: "I lived in a small village called Andromba which is in the Ambatondrazaka region. I lived with my parents who are both farmers, and helping them taking care of the field and some livestokes before I started to study at Onja. I have two brothers and a little sister, and they are living with our parents."
     }
 ]
 
